@@ -7,9 +7,22 @@ import { useState } from "react";
 export default function Home() {
 
     const [listaCarros, setCarros] = useState([
-        {id: 1, nomeCarro: 'Carro A', preco: 'R$ 90.000'},
-        {id: 2, nomeCarro: 'Carro B', preco: 'R$ 85.000'},
-        {id: 3, nomeCarro: 'Carro C', preco: 'R$ 95.000'}
+        {
+            id:1,
+            item: "Carro-Honda City sedan(2022)",
+            preço: "90.00,00"
+        },
+        {
+            id:2,
+            item: "Carro-Toyota Corolla(2021)",
+            preço: "85.00,00"
+        },
+        {
+            id:3,
+            item: "Citroen C3 Live 1.0",
+            preço: "95.00,00"
+        }
+        
     ]);
 
     return (

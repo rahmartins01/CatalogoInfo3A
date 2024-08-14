@@ -6,10 +6,22 @@
 import { useState } from "react";
 
 export default function Home() {}
-  const [listaProdutos, setProdutos] = useState([
-    { id: 1, nome: 'Produto A', preco: 'R$ 10,00' },
-    { id: 2, nome: 'Produto B', preco: 'R$ 20,00' },
-    { id: 3, nome: 'Produto C', preco: 'R$ 30,00' }
+const [listaCarros, setCarros] = useState([
+  {
+    id:1,
+    item: "Carro-Honda City sedan(2022)",
+    preço: "90.00,00"
+},
+{
+    id:2,
+    item: "Carro-Toyota Corolla(2021)",
+    preço: "85.00,00"
+},
+{
+    id:3,
+    item: "Citroen C3 Live 1.0",
+    preço: "95.00,00"
+}
   ]);
 
   const [listaPedidos, setListaPedidos] = useState([]);
@@ -36,6 +48,7 @@ export default function Home() {}
   return 
     <div>
          <h1>Livros de Programação</h1>
+         </div>
 
       {
          listaCarros.map((carro)=>
@@ -54,4 +67,3 @@ export default function Home() {}
         </div>
      )
   }
-</div>
