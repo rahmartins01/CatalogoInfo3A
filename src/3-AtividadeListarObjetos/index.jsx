@@ -13,6 +13,15 @@ export default function Home() {
   return (
     <div>
          <h1>Livros de Programação</h1>
+
+      {
+         listaCarros.map((produto)=>
+          <div key={carros.id}>
+            <p>{carro.marca}</p>
+            <p>{carro.preço}</p>
+        </div>
+        )
+    }
     </div>
    
   );

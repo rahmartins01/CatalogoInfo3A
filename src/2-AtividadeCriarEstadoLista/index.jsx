@@ -16,5 +16,6 @@ export default function Home() {
         <div>
             <h1>Loja de carros</h1>
         </div>
-    );
+           
+    )
 }
